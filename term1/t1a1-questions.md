@@ -28,7 +28,27 @@
 - Write a short explanation of why you would use the classes you have identified
 
 12. Identify and explain the error in the code snippet below that is preventing correct execution of the program
+
+```python
+celsius = input()
+
+farenheit = (celsius*9/5)+32
+
+print(f"The result is {farenheit}.")
+```
+
 13. The code snippet below looks for the first two elements that are out of order and swaps them; however, it is not producing the correct results. Rewrite the code so that it works correctly.
+
+```python
+arr = [5, 22, 29, 39, 19, 51, 78, 96, 84]
+i = 0
+while (i<arr.len()-1) and (arr[i] < arr[i+1]):
+	i += 1
+print(i)
+	arr[i] = arr[i+1]
+	arr[i+1] = arr[i]
+```
+
 14. Demonstrate your algorithmic thinking through completing the following two tasks, in order:
 
     1. Create a flowchart to outline the steps for listing all prime numbers between 1 and 100 (inclusive). Your flowchart should make use of standard conventions for flowcharts to indicate processes, tasks, actions, or operations
