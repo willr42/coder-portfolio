@@ -140,7 +140,87 @@ With the majority of modern life taking place on the Internet, and a significant
 
 # Q4. Identify THREE data structures used in the Python programming language and explain the reasons for using each.
 
+Python has many data structures, including ones you'd typically expect like a _string_ datatype and a _number_ datatype. However, there are a few python structures that are extremely useful in everyday programming.
+
+## Lists
+
+Python lists are a way of grouping values. They're represented by the `[]` character. Lists can be iterated over, allowing us to process each item in a list, for example:
+
+```python
+fruits = [apple, banana, orange]
+for fruit in fruits:
+  print(fruit)
+```
+
+Lists are **in order**. You can 'index' into a list, using the notation like `fruits[2]`, which would return "orange". You can change the contents of a list on the fly. You can ask questions of a list in a conditional form, eg. 
+
+```python
+'kiwi' in fruit:
+False
+```
+
+All in all, a list is the go-to solution for storing related data, to be used when you need to store something you think you may need to iterate over.
+
+## Tuples
+
+Tuples are represented by `()` characters. Tuples are *very* similar to lists. You can iterate over them, index into them, they are ordered.
+
+Except they are **immutable**. That means once a tuple is declared, you cannot change the values inside it. This makes it very useful for data that will not change, to make sure you don't accidentally make mistakes, or because you simply know they won't change. EG.
+
+```python
+greenwich_gps = (51.4780, 0.0015)
+whitehouse_gps = (38.8977, 77.0365)
+```
+
+```python
+van_gogh_lifespan = (1853, 1890)
+```
+
+Tuples are also faster than lists but that's probably not a concern unless there are a lot of elements in them. Mainly, the use comes in their immutability.
+
+
+## Dictionaries
+
+Dictionaries are Python's main way of storing key-value pairs. They use the `{}` characters. For example:
+
+```python
+favourite_fruits = {
+  "will": "banana",
+  "josh": "apple",
+  "matt": "orange"
+}
+```
+
+Keys can be strings or numbers, or even tuples, as long as the tuple doesn't contain a mutable type. EG.
+
+### Numbers:
+
+```python
+class_scoreboard = {
+  1: "matt",
+  2: "josh",
+  3: "will"
+}
+```
+
+### Tuples
+
+```python
+school_history = {
+  ("high", "school"): "Red Secondary",
+  ("primary", "school"): "Blue Primary"
+}
+```
+
+Although I'm not really sure why you'd want to do that with tuples as a key, this example feels a bit contrived.
+
+Dictionaries are extremely useful, as it allows you to create complicated associations between pieces of data. You can loop over them similar to lists and zip them up.
+
 # Q5. Describe the features of interpreters and compilers and how they are different.
+
+Interpreters and compilers are two related concepts, but they are fairly distinct. A **compiler** takes source code written in a human-readable programming language, for example `C`, `C++` or `Rust`, and translates it into machine-code that the computer can execute, called *Assembly*. This machine-code usually becomes a *binary* that can be executed on the computer.
+
+To contrast with a compiler, an **interpreter** translates *one line at a time* into machine code and returns the result. This enables faster iteration, eliminating the need to compile in between each execution of the program, which is why languages like `Python` and `JavaScript` have become popular. The disadvantage of using an interpreted language is overhead, as your language is being ran inside a virtual enviroment (for example, the V8 Engine for Javascript that powers Chrome and Node.) rather than directly on the machine. However, interpreted languages are also becoming faster, with advances like just in time compilation (JIT) used by the Java Virtual Machine that will compile certain parts of a program into machine code.
 
 # Q6. Identify TWO commonly used programming languages and explain the benefits and drawbacks of each
 
