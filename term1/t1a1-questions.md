@@ -137,6 +137,15 @@ Rendering the page involves taking the HTML, which represents the structure of t
 Web browsers use URLs, which can be either domain names or raw IP addresses, to make HTTP(S) requests. Initially, the web was quite simple (before the existence of CSS and JavaScript) and thus were web browsers. Today, the web is as complex as any desktop frontend application, and browsers have had to keep pace.
 
 With the majority of modern life taking place on the Internet, and a significant portion of that being in web browsers, having adequate developer tools in a browser is more important than ever. All major browsers feature **developer tools** integrated in them. You can inspect the HTML, CSS, and JavaScript, make changes to them on the fly, add debugging points to JavaScript code, live edit styles, watch the flow of network traffic, and hundreds more features.
+
+# Q4. Identify THREE data structures used in the Python programming language and explain the reasons for using each.
+
+# Q5. Describe the features of interpreters and compilers and how they are different.
+
+# Q6. Identify TWO commonly used programming languages and explain the benefits and drawbacks of each
+
+# Q7. Identify TWO ethical issues from the areas below and discuss the extent to which an IT professional is ethically responsible in terms of the issue.
+
    List of topics containing ethical issues:
 
    - access to a user’s personal information (medical, family, financial,
@@ -148,15 +157,22 @@ With the majority of modern life taking place on the Internet, and a significant
    - aggressive sales and marketing practices designed to mislead and deceive consumers
    - trading of shares on the stock exchange OR crypto-currencies
 
-8. Explain control flow, using examples from the Python programming language
-9. Explain the difference between type coercion and type conversion. Are either of these used in Python?
-10. Explain data types, using examples
-11. Here’s the problem: “There is a restaurant serving a variety of food. The customers want to be able to buy food of their choice. All the staff just quit, how can you build an app to replace them?”
+## Part 1: For both issues, identify a source of legal information relating to the ethical issue and discuss whether the law is helpful in assisting a developer to act in an ethical way.
+
+## Part 2: Conduct research into a case study of ONE of the ethical issues you have chosen discuss how an ethical IT professional should respond to the case study and how they might mitigate or prevent ethical breaches. (Word count guide: 400 - 600 words)
+
+# Q8. Explain control flow, using examples from the Python programming language
+
+# Q9. Explain the difference between type coercion and type conversion. Are either of these used in Python?
+
+# Q10. Explain data types, using examples
+
+# Q11. Here’s the problem: “There is a restaurant serving a variety of food. The customers want to be able to buy food of their choice. All the staff just quit, how can you build an app to replace them?”
 
 - Identify the classes you would use to solve the problem
 - Write a short explanation of why you would use the classes you have identified
 
-12. Identify and explain the error in the code snippet below that is preventing correct execution of the program
+# Q12. Identify and explain the error in the code snippet below that is preventing correct execution of the program
 
 ```python
 celsius = input()
@@ -166,7 +182,7 @@ farenheit = (celsius*9/5)+32
 print(f"The result is {farenheit}.")
 ```
 
-13. The code snippet below looks for the first two elements that are out of order and swaps them; however, it is not producing the correct results. Rewrite the code so that it works correctly.
+# Q13. The code snippet below looks for the first two elements that are out of order and swaps them; however, it is not producing the correct results. Rewrite the code so that it works correctly.
 
 ```python
 arr = [5, 22, 29, 39, 19, 51, 78, 96, 84]
@@ -178,13 +194,14 @@ print(i)
 	arr[i+1] = arr[i]
 ```
 
-14. Demonstrate your algorithmic thinking through completing the following two tasks, in order:
+# Q14. Demonstrate your algorithmic thinking through completing the following two tasks, in order:
 
     1. Create a flowchart to outline the steps for listing all prime numbers between 1 and 100 (inclusive). Your flowchart should make use of standard conventions for flowcharts to indicate processes, tasks, actions, or operations
     2. Write pseudocode for the process outlined in your flowchart
 
-15. Write pseudocode OR Python code for the following problem: You have access to two variables: raining (boolean) and temperature (integer). If it’s raining and the temperature is less than 15 degrees, print to the screen “It’s wet and cold”, if it is less than 15 but not raining print “It’s not raining but cold”. If it’s greater than or equal to 15 but not raining print “It’s warm but not raining”, and otherwise tell them “It’s warm and raining”.
-16. ACME Corporation are hiring a new junior developer, as part of their hiring criteria they've created a "coding skill score" based on the specific competencies they require for this role; the more important the skill is for ACME corp, the more points it contributes to the "coding skill score" The skills are weighted as follows:
+# Q15. Write pseudocode OR Python code for the following problem: You have access to two variables: raining (boolean) and temperature (integer). If it’s raining and the temperature is less than 15 degrees, print to the screen “It’s wet and cold”, if it is less than 15 but not raining print “It’s not raining but cold”. If it’s greater than or equal to 15 but not raining print “It’s warm but not raining”, and otherwise tell them “It’s warm and raining”.
+
+# Q16. ACME Corporation are hiring a new junior developer, as part of their hiring criteria they've created a "coding skill score" based on the specific competencies they require for this role; the more important the skill is for ACME corp, the more points it contributes to the "coding skill score" The skills are weighted as follows:
 
 - Python (1)
 - Ruby (2)
