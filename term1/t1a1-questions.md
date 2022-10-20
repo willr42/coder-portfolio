@@ -146,16 +146,16 @@ With the majority of modern life taking place on the Internet, and a significant
 
 # Q7. Identify TWO ethical issues from the areas below and discuss the extent to which an IT professional is ethically responsible in terms of the issue.
 
-   List of topics containing ethical issues:
+List of topics containing ethical issues:
 
-   - access to a user’s personal information (medical, family, financial,
-     personal attributes such as sexuality, religion, or beliefs)
-   - intellectual property, copyright, and acknowledgement.
-   - criminal acts such as theft, fraud, trafficking and distribution of prohibited substances, terrorism
-   - GPS tracking data and other types of metadata, MAC addresses, hardware fingerprints
-   - freedom of thought, conscience, speech and the media
-   - aggressive sales and marketing practices designed to mislead and deceive consumers
-   - trading of shares on the stock exchange OR crypto-currencies
+- access to a user’s personal information (medical, family, financial,
+  personal attributes such as sexuality, religion, or beliefs)
+- intellectual property, copyright, and acknowledgement.
+- criminal acts such as theft, fraud, trafficking and distribution of prohibited substances, terrorism
+- GPS tracking data and other types of metadata, MAC addresses, hardware fingerprints
+- freedom of thought, conscience, speech and the media
+- aggressive sales and marketing practices designed to mislead and deceive consumers
+- trading of shares on the stock exchange OR crypto-currencies
 
 ## Part 1: For both issues, identify a source of legal information relating to the ethical issue and discuss whether the law is helpful in assisting a developer to act in an ethical way.
 
@@ -216,3 +216,19 @@ Write a program that allows a user to input their skills and then tells them
 
 - Their overall "coding skill score"
 - Skills they may want to learn, and how much each one would improve their score
+
+# References
+
+## Q1
+
+MDN Web Docs (2018). HTML: HyperText Markup Language. [online] MDN Web Docs. Available at: https://developer.mozilla.org/en-US/docs/Web/HTML].
+
+## Q2
+
+Blank, A.G. (2006). TCP/IP Foundations. John Wiley & Sons, pp.48–52.
+‌
+Red Hat (2019). What you need to know about IPv6. [online] Enable Sysadmin. Available at: https://www.redhat.com/sysadmin/what-you-need-know-about-ipv6.
+
+## Q3
+
+Ward, B. (2020). How Linux Works. S.L.: O’reilly Media, pp.225–232.
