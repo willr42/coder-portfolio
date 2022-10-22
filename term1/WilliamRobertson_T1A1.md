@@ -2,9 +2,11 @@
 
 William Robertson
 
+# Workbook Questions
+
 # Q1: **Identify** and **explain** common and important components and concepts of web development markup languages
 
-Currently, web development is compromised of three different languages. **HTML**, or HyperText Markup Language, which represents a document's structure. MDN describes this as "a basic building block of the web" (1), as without HTML, there is no content to be displayed on the page. This isn't necessarily true with newer approaches to web content, which involve fetching content after an initial HTML page has been received, using JavaScript.
+Currently, web development is compromised of three different languages. **HTML**, or HyperText Markup Language, which represents a document's structure. MDN describes this as "a basic building block of the web" (MDN Web Docs, 2018), as without HTML, there is no content to be displayed on the page. This isn't necessarily true with newer approaches to web content, which involve fetching content after an initial HTML page has been received, using JavaScript.
 
 ## HTML
 
@@ -31,34 +33,282 @@ With just HTML, a page would look rather plain, just a step above plaintext. Eac
 
 ## CSS
 
-CSS stands for Cascading Style Sheets. CSS applies _styles_ to particular elements. It uses **selectors**, which are typically HTML elements, classes, or IDs, but in more complicated situations, can include pseudo-classes like `:hover`.
+CSS stands for Cascading Style Sheets. CSS applies _styles_ to particular elements. The syntax for CSS is quite simple.
 
-There are three ways to style an element with CSS. You can add a style **in-line** in the HTML itself, by adding a `style` attribute to an element. EG, `<h1 style="color:red">I'm red` would create an H1 element with a red colour. This can be useful, but can quickly get messy. The next is to add a `<style>` tag to the head of the document, and do styling in there. The most common way is to use an external stylesheet, or multiple external stylesheets. This is done using a `<link>` element, like this: `<link rel="stylesheet" href="./styles.css">`.
+```css
+p {
+  color: red;
+  width: 200px;
+}
+```
 
-CSS is a fundamental part of the modern web, modifying the position, display, color, size of elements.
+It uses **selectors**, which are typically HTML elements, classes, or IDs, but in more complicated situations, can include pseudo-classes like `:hover`. It then uses `{` and `}` characters to create a declaration block that contains various CSS properties and their values.
+
+There are three ways to style an element. You can add a style **in-line** in the HTML itself, by adding a `style` attribute to an element. EG, `<h1 style="color:red">I'm red` would create an H1 element with a red colour. This can be useful, but can quickly get messy. The next is to add a `<style>` tag to the head of the document, and do styling in there. The most common way is to use an external stylesheet, or multiple external stylesheets. This is done using a `<link>` element, like this: `<link rel="stylesheet" href="./styles.css">`.
+
+CSS is a fundamental part of the modern web, modifying the position, display, color, size of elements. Elements in HTML can be either "in-line" or "block", and this affects their ability to be styled or positioned on the page.
 
 ## JavaScript
 
-The final element of web development is not really part of markup languages, but it is a fundamental part of the modern web. JavaScript is a **programming** language. It is used to add interactivity to the modern web. Mosts sites now extensively use JavaScript to do everything from listen to page events, change HTML elements on-the-fly, or even play games.
+The final element of web development is not really part of markup languages, but I'll mention it quickly, which is JavaScript. JavaScript, unlike HTML or CSS, is a **programming** language. It is used to add interactivity to the modern web. Mosts sites now extensively use JavaScript to do everything from listen to page events, change HTML elements on-the-fly, or even play games.
 
-# Q2: Define the following features (packets, IP addresses, routers & routing, domains & DNS) and explain how each technology has contributed to the development of the internet.
+# Q2: Define the features of the following technologies that are essential in terms of the development of the internet: packets, IP addresses (IPv4 and IPv6), routers and routing, domains and DNS. Explain how each technology has contributed to the development of the internet.
 
 ## Packets
 
-## IP Addresses
+Packets are a way of ensuring throughput on a complicated network system, like the internet. Instead of sending one file in totality at once, which would create significant congestion between computers, we send a series of packets. Packets contain headers, which contain important metadata about the packet that can include the destination IP address, the source IP address, the hop limit, and more information. Packets also contain the payload, which is a portion of the data needed to construct the actual file that the destination computer wants to receive. The computer will receive thousands, or tens of thousands, of these packets, and reassemble them at the other end into the data requested.
 
-## Routers and Routing
+The two most popular transmission protocols today, TCP and UDP, both use packets. Without packets, it would be almost impossible to run a network as big and as complex as the internet.
 
-## Domains and DNS
+## IP addresses IPv4
 
-# Q3: Define the features of the following technologies (TCP, HTTP & HTTPS, web browsers: requests, rendering and developer tools) that are essential in terms of the development of the internet.
+An IP address is a unique number that identifies computers on a network. IP stands for Internet Protocol. It's a set of agreed-upon rules, invented in the 1970s, that define how data is sent and received over a network. Part of this protocol involves assigning a unique identifier to each computer, to ensure packets are delivered to the correct address. IPv4 specifically refers to the **fourth version** of the protocol, and is the one most-widely used today. IPv4 addresses are typically displayed as four numbers separated by full-stops, for example, 142.250.70.238.
+
+More accurately, IPv4 uses 32 bits to represent addresses, which are broken up into four "octets" (groups of 8 bits each) (Ward, 2020). Certain ranges of IPv4 are specifically sectioned off for specific uses. `192.168.0.0 - 192.168.255.255` is the most common of these bands, which is a common default for most private networks. Another important one for web development is the "loopback address", `127.0.0.1`, which basically connects the machine to itself. Commonly called localhost, this allows us to run things like server programs on our local machine, and still visit them, even when offline.
+
+IP addresses are fundamental to the Internet, in being able to determine the correct address to send a packet.
+
+This 32-bit address space is extensive, but as more and more online devices have been produced and disseminated internationally, it became clear that IPv4 would not be enough to address every device. That led to the invention of IPv6.
+
+## IP addresses IPv6
+
+IPv6 is the **sixth version** of the IP protocol. (IPv5 was never adopted, as it used IPv4's old 32-bit addressing.) From IPv4's 32 bits, IPv6 contains **128 bits**. In contrast to the dotted quad notation common to IPv4, IPv6 uses hexadecimal representation, where each digit is represented by a character from 0 to f (Base 16 notation). An example IPv6 address would be something like 1080:0000:0000:0000:0008:0800:200C:417A (Blank, 2004). This has solved the issue of address space, taking the range of possible IP addresses from IPv4's roughly 4 billion to a frankly almost unwriteable number - 340 trillion trillion trillion, per RedHat (2019).
+
+IPv6 will ensure that the Internet can continue to add devices indefinitely, and sidesteps an almost Y2K-scale problem that was rapidly looming.
+
+## Routers & Routing
+
+At their most basic level, routers "route" packets, connecting two networks together. This is necessary, because it would be impossible for the entirety of the internet to inhabit the same one shared network - computers need to listen for packets being sent to them, and transmit further packets onwards, all of which creates congestion on the line. Routers solve this issue, by breaking the internet (and other networks) up into smaller subnetworks.
+
+For example, at home, every one of us who has a WiFi network has a Local Area Network, or LAN. To connect this LAN to the wider internet, we need a router. The router translates the packets being received from our Internet Service Provider's Wide Area Network (WAN) to ones that then go onwards through the LAN to the computer that requested them. A router allows all the devices in one home to "share" an IP address. The router uses an internal routing table to check the destination of each packet, and then send it on to the correct device.
+
+Routers are the backbone of the Internet. Without them and their ability to divide networks, the Internet would have died through overwhelming congestion, and a maximum limit on the amount of devices that could be connected.
+
+## Domains & DNS
+
+Remembering a specific IP address is quite difficult. Furthermore, as organisations expand, they may have multiple IP addresses that serve the same content, or a more complex configuration of load-balancers, gateways and routers. It's far easier to remember a word. That is where domains come from. Domains are effectively an **alias** for a particular IP address, a word in string format that your computer can "resolve" to the actual IP address you want to visit.
+
+Domain resolution is a multi-step process, with some limited hostnames stored on your system itself. However, the most common way of resolving domains is to use a Domain Name Server, or DNS. There is a network of DNS servers throughout the world that provide name resolution services for the entire internet. Domains, as they sound like, are different categories of host names - ".com", ".edu", ".net", are all **top-level domains**.
+
+Domain resolution works like this. First, your computer checks its limited local host files (these differ from OS to OS). Then, if your host isn't listed there, your computer will ask your specified DNS server (this may be provided by your ISP, or you may choose your own). This server basically keeps a gigantic database that matches domains to IP addresses. However, that might not be enough. If your domain isn't in your DNS, your DNS will go ask a Root Name Server. There are only thirteen of these worldwide, and they "point" at the various top-level domains. Your DNS will then go ask the .com domain for the domain, and hopefully serve you the page. If there are subdomains, your DNS continues to ask until it gets the answer, or an error.
+
+DNS is essential to the functioning of the Internet, allowing people to remember short web addresses rather than full IP dotted quads.
+
+# Q3: Define the features of the following technologies that are essential in terms of the development of the internet: TCP, HTTP and HTTPS, web browsers (requests, rendering, developer tools)
 
 ## TCP
 
-## HTTP & HTTPS
+TCP stands for Transmission Control Protocol. It is part of the main protocol that defines the internet, the other of which is the Internet Protocol (IP), and together they are usually referred to as TCP/IP. IP is the protocol that defines the concept of IP addresses and moving packets from a source address to a destination address. However, it doesn't define the transmission of these packets. They could arrive at the destination in the wrong order, or one could fail to arrive at all. TCP prevents this, by defining a connection standard that takes place between two devices.
 
-## Web Browsers: Requests, Rendering and DevTools
+Every TCP connection starts with establishing the connection, also called a "TCP handshake". This handshake is three-way. (Blank, 2004).
 
-### References
+1. The first computer sends a SYN packet, which means "SYNchronise".
+2. The second computer sends a SYN/ACK packet, which means, "SYNchronise ACKnowledged".
+3. The first computer sends an ACK packet, which means "ACKnowledged."
 
-(1) MDN Web Docs (2018). HTML: HyperText Markup Language. [online] MDN Web Docs. Available at: https://developer.mozilla.org/en-US/docs/Web/HTML].
+After the handshake, the computers can begin exchanging packets. Each packet contains a sequence address, and must be ACKnowledged by the receiving computer. This ensures no packets can be lost along the way, and that packets can be properly reassembled at the other end. Once the exchange is complete, another three-way handshake takes place, with SYN being replaced by FIN, for "FINished".
+
+TCP is what enables clients to receive files from a server, in ensuring packets can be reassembled in the right order, and resent if they fail to be delivered.
+
+## HTTP and HTTPS
+
+HTTP stands for HyperText Transfer Protocol. It builds on top of TCP/IP and is the foundation of the World Wide Web, in that it defines the exchange that takes place between your web browser or other application and a web server. This exchange begins with an HTTP request from an application running on a computer. By convention, HTTP servers are hosted on port 80, so it's most common to send a request to this port (and it's the default used by most browsers, or it was up until the advent of HTTPS). This request contains (Blank, 2004, p. 61);
+
+- the version of HTTP being used
+- the URL, or Universal Resource Location, of the "resource" or page you are requesting
+- the HTTP method of the request
+- HTTP request headers
+- an optional body.
+
+The HTTP method is defined by the HTTP protocol, and contains a list of standard "verbs" that servers respond to. The most common are GET, which is to request a resource, POST, which is to send information to the server from the client, UPDATE, which updates information already existing on the client, and DELETE, which asks the server to delete a resource. Following the request, the web server sends a HTTP response, that contains similar data to the request, including a body that may consist of JSON data, a HTML document, a CSS document, an arbitrary file or more.
+
+In this way, we can build a frontend client that sends HTTP requests to a backend server and displays the information.
+
+The one flaw with HTTP is that these requests and responses are sent "in the clear", which means any other computer on the network or indeed along the path of the packet may intercept the packet and inspect it. Malicious actors may "sniff" the traffic and reveal personal information, or identify common usage patterns.
+
+HTTPS solves this by asking websites to provide a Transport Layer Security certificate (formerly an SSL, or Secure Socket Layer, certificate, and the terms are often used interchangeably). These certificates are given out by Certificate Authorities, and require you to prove that you are who you say you are. This certificate is used to create an encrypted session between the client and the server, which means we can trust the traffic.
+
+## Web Browsers
+
+A web browser is most people's everyday experience of the internet, and have become essential tools in business and life in general. Web browsers are software that make requests to web servers, receive HTML, CSS, and JavaScript, and then render the page.
+
+Rendering the page involves taking the HTML, which represents the structure of the page, layering on the CSS, which represents the styling, and using JavaScript to add interactivity to the page. New web technologies such as React have shifted the responsibility of rendering HTML to JavaScript itself, enabling Single Page Applications that happen in a single window without requiring a browser refresh.
+
+Web browsers use URLs, which can be either domain names or raw IP addresses, to make HTTP(S) requests. Initially, the web was quite simple (before the existence of CSS and JavaScript) and thus were web browsers. Today, the web is as complex as any desktop frontend application, and browsers have had to keep pace.
+
+With the majority of modern life taking place on the Internet, and a significant portion of that being in web browsers, having adequate developer tools in a browser is more important than ever. All major browsers feature **developer tools** integrated in them. You can inspect the HTML, CSS, and JavaScript, make changes to them on the fly, add debugging points to JavaScript code, live edit styles, watch the flow of network traffic, and hundreds more features.
+
+# Q4. Identify THREE data structures used in the Python programming language and explain the reasons for using each.
+
+Python has many data structures, including ones you'd typically expect like a _string_ datatype and a _number_ datatype. However, there are a few python structures that are extremely useful in everyday programming.
+
+## Lists
+
+Python lists are a way of grouping values. They're represented by the `[]` character. Lists can be iterated over, allowing us to process each item in a list, for example:
+
+```python
+fruits = [apple, banana, orange]
+for fruit in fruits:
+  print(fruit)
+```
+
+Lists are **in order**. You can 'index' into a list, using the notation like `fruits[2]`, which would return "orange". You can change the contents of a list on the fly. You can ask questions of a list in a conditional form, eg. 
+
+```python
+'kiwi' in fruit:
+False
+```
+
+All in all, a list is the go-to solution for storing related data, to be used when you need to store something you think you may need to iterate over.
+
+## Tuples
+
+Tuples are represented by `()` characters. Tuples are *very* similar to lists. You can iterate over them, index into them, they are ordered.
+
+Except they are **immutable**. That means once a tuple is declared, you cannot change the values inside it. This makes it very useful for data that will not change, to make sure you don't accidentally make mistakes, or because you simply know they won't change. EG.
+
+```python
+greenwich_gps = (51.4780, 0.0015)
+whitehouse_gps = (38.8977, 77.0365)
+```
+
+```python
+van_gogh_lifespan = (1853, 1890)
+```
+
+Tuples are also faster than lists but that's probably not a concern unless there are a lot of elements in them. Mainly, the use comes in their immutability.
+
+
+## Dictionaries
+
+Dictionaries are Python's main way of storing key-value pairs. They use the `{}` characters. For example:
+
+```python
+favourite_fruits = {
+  "will": "banana",
+  "josh": "apple",
+  "matt": "orange"
+}
+```
+
+Keys can be strings or numbers, or even tuples, as long as the tuple doesn't contain a mutable type. EG.
+
+### Numbers:
+
+```python
+class_scoreboard = {
+  1: "matt",
+  2: "josh",
+  3: "will"
+}
+```
+
+### Tuples
+
+```python
+school_history = {
+  ("high", "school"): "Red Secondary",
+  ("primary", "school"): "Blue Primary"
+}
+```
+
+Although I'm not really sure why you'd want to do that with tuples as a key, this example feels a bit contrived.
+
+Dictionaries are extremely useful, as it allows you to create complicated associations between pieces of data. You can loop over them similar to lists and zip them up.
+
+# Q5. Describe the features of interpreters and compilers and how they are different.
+
+Interpreters and compilers are two related concepts, but they are fairly distinct. A **compiler** takes source code written in a human-readable programming language, for example `C`, `C++` or `Rust`, and translates it into machine-code that the computer can execute, called *Assembly*. This machine-code usually becomes a *binary* that can be executed on the computer.
+
+To contrast with a compiler, an **interpreter** translates *one line at a time* into machine code and returns the result. This enables faster iteration, eliminating the need to compile in between each execution of the program, which is why languages like `Python` and `JavaScript` have become popular. The disadvantage of using an interpreted language is overhead, as your language is being ran inside a virtual enviroment (for example, the V8 Engine for Javascript that powers Chrome and Node.) rather than directly on the machine. However, interpreted languages are also becoming faster, with advances like just in time compilation (JIT) used by the Java Virtual Machine that will compile certain parts of a program into machine code.
+
+# Q6. Identify TWO commonly used programming languages and explain the benefits and drawbacks of each
+
+# Q7. Identify TWO ethical issues from the areas below and discuss the extent to which an IT professional is ethically responsible in terms of the issue.
+
+List of topics containing ethical issues:
+
+- access to a user’s personal information (medical, family, financial,
+  personal attributes such as sexuality, religion, or beliefs)
+- intellectual property, copyright, and acknowledgement.
+- criminal acts such as theft, fraud, trafficking and distribution of prohibited substances, terrorism
+- GPS tracking data and other types of metadata, MAC addresses, hardware fingerprints
+- freedom of thought, conscience, speech and the media
+- aggressive sales and marketing practices designed to mislead and deceive consumers
+- trading of shares on the stock exchange OR crypto-currencies
+
+## Part 1: For both issues, identify a source of legal information relating to the ethical issue and discuss whether the law is helpful in assisting a developer to act in an ethical way.
+
+## Part 2: Conduct research into a case study of ONE of the ethical issues you have chosen discuss how an ethical IT professional should respond to the case study and how they might mitigate or prevent ethical breaches. (Word count guide: 400 - 600 words)
+
+# Q8. Explain control flow, using examples from the Python programming language
+
+# Q9. Explain the difference between type coercion and type conversion. Are either of these used in Python?
+
+# Q10. Explain data types, using examples
+
+# Q11. Here’s the problem: “There is a restaurant serving a variety of food. The customers want to be able to buy food of their choice. All the staff just quit, how can you build an app to replace them?”
+
+- Identify the classes you would use to solve the problem
+- Write a short explanation of why you would use the classes you have identified
+
+# Q12. Identify and explain the error in the code snippet below that is preventing correct execution of the program
+
+```python
+celsius = input()
+
+farenheit = (celsius*9/5)+32
+
+print(f"The result is {farenheit}.")
+```
+
+# Q13. The code snippet below looks for the first two elements that are out of order and swaps them; however, it is not producing the correct results. Rewrite the code so that it works correctly.
+
+```python
+arr = [5, 22, 29, 39, 19, 51, 78, 96, 84]
+i = 0
+while (i<arr.len()-1) and (arr[i] < arr[i+1]):
+	i += 1
+print(i)
+	arr[i] = arr[i+1]
+	arr[i+1] = arr[i]
+```
+
+# Q14. Demonstrate your algorithmic thinking through completing the following two tasks, in order:
+
+    1. Create a flowchart to outline the steps for listing all prime numbers between 1 and 100 (inclusive). Your flowchart should make use of standard conventions for flowcharts to indicate processes, tasks, actions, or operations
+    2. Write pseudocode for the process outlined in your flowchart
+
+# Q15. Write pseudocode OR Python code for the following problem: You have access to two variables: raining (boolean) and temperature (integer). If it’s raining and the temperature is less than 15 degrees, print to the screen “It’s wet and cold”, if it is less than 15 but not raining print “It’s not raining but cold”. If it’s greater than or equal to 15 but not raining print “It’s warm but not raining”, and otherwise tell them “It’s warm and raining”.
+
+# Q16. ACME Corporation are hiring a new junior developer, as part of their hiring criteria they've created a "coding skill score" based on the specific competencies they require for this role; the more important the skill is for ACME corp, the more points it contributes to the "coding skill score" The skills are weighted as follows:
+
+- Python (1)
+- Ruby (2)
+- Bash (4)
+- Git (8)
+- HTML (16)
+- TDD (32)
+- CSS (64)
+- JavaScript (128) ​
+
+Write a program that allows a user to input their skills and then tells them
+
+- Their overall "coding skill score"
+- Skills they may want to learn, and how much each one would improve their score
+
+# References
+
+## Q1
+
+MDN Web Docs (2018). HTML: HyperText Markup Language. [online] MDN Web Docs. Available at: https://developer.mozilla.org/en-US/docs/Web/HTML].
+
+## Q2
+
+Blank, A.G. (2006). TCP/IP Foundations. John Wiley & Sons, pp.48–52.
+‌
+Red Hat (2019). What you need to know about IPv6. [online] Enable Sysadmin. Available at: https://www.redhat.com/sysadmin/what-you-need-know-about-ipv6.
+
+## Q3
+
+Ward, B. (2020). How Linux Works. S.L.: O’reilly Media, pp.225–232.
