@@ -22,7 +22,7 @@ Mainly future recruiters or coworkers. Also includes my programming peers, peopl
 
 //WIP: deployment information, css composition, html notes
 
-SCSS structure informed by this [best practices article](https://www.webdesignerdepot.com/2020/12/2-smartest-ways-to-structure-sass/).
+SCSS using Dart Sass. SCSS structure informed by this [best practices article](https://www.webdesignerdepot.com/2020/12/2-smartest-ways-to-structure-sass/). To deploy, make sure sass is compiled with `sass scss:styles`.
 
 ## Sitemap
 
