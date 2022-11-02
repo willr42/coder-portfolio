@@ -1,1 +1,40 @@
 // Fonts, mixins, variables, similar styles.
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  font-family: 'Source Sans Pro', 'Arial', sans-serif;
+  font-size: 16px;
+}
+
+// Media query mixin, adopted from
+// https://www.toptal.com/css/sass-mixins-keep-your-stylesheets-dry
+$breakpoint-small: 600px;
+$breakpoint-med-small: 960px;
+$breakpoint-med: 1175px;
+
+@mixin screen($size, $pixels: $breakpoint-small) {
+  @if $size == 'small' {
+    @media screen and (max-width: $breakpoint-small) {
+      @content;
+    }
+  } @else if $size == 'med-small' {
+    @media screen and (max-width: $breakpoint-med-small) {
+      @content;
+    }
+  } @else if $size == 'med' {
+    @media screen and (max-width: $breakpoint-med) {
+      @content;
+    }
+  } @else if $size == 'large' {
+    @media screen and (max-width: $breakpoint-med) {
+      @content;
+    }
+  } @else if $size == 'custom' {
+    @media screen and ($type + -width: $pixels + px) {
+      @content;
+    }
+  } @else {
+    @content;
+  }
+}

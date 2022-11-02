@@ -1,1 +1,1 @@
-{"version":3,"sourceRoot":"","sources":["../scss/_components.scss","../scss/_main.scss"],"names":[],"mappings":"AAEA;EACE;;;ACHF","file":"main.css"}
+{"version":3,"sourceRoot":"","sources":["../scss/_core.scss","../scss/_layout.scss","../scss/_components.scss"],"names":[],"mappings":"AACA;AAAA;AAAA;EAGE;EACA;EACA;;;AAWE;ECdJ;IAEI;;;;ACHJ;EACE","file":"main.css"}

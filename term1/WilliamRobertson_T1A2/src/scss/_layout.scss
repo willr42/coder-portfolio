@@ -1,1 +1,8 @@
 // Common layouts for entire pages
+@use './core';
+
+.navigation {
+  @include core.screen(small) {
+    width: 100%;
+  }
+}
