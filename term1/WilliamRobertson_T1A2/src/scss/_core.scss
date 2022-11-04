@@ -1,4 +1,11 @@
 // Fonts, mixins, variables, similar styles.
+
+// Variables
+$small-screen: 650px;
+$med-screen: 900px;
+$lg-screen: 1200px;
+
+// Set logical sizing & fonts
 *,
 *::before,
 *::after {
@@ -7,34 +14,26 @@
   font-size: 16px;
 }
 
-// Media query mixin, adopted from
-// https://www.toptal.com/css/sass-mixins-keep-your-stylesheets-dry
-$breakpoint-small: 600px;
-$breakpoint-med-small: 960px;
-$breakpoint-med: 1175px;
+// Reset, adopted from Normalize.css https://necolas.github.io/normalize.css/
+body {
+  margin: 0;
+}
 
-@mixin screen($size, $pixels: $breakpoint-small) {
-  @if $size == 'small' {
-    @media screen and (max-width: $breakpoint-small) {
-      @content;
-    }
-  } @else if $size == 'med-small' {
-    @media screen and (max-width: $breakpoint-med-small) {
-      @content;
-    }
-  } @else if $size == 'med' {
-    @media screen and (max-width: $breakpoint-med) {
-      @content;
-    }
-  } @else if $size == 'large' {
-    @media screen and (max-width: $breakpoint-med) {
-      @content;
-    }
-  } @else if $size == 'custom' {
-    @media screen and ($type + -width: $pixels + px) {
-      @content;
-    }
-  } @else {
-    @content;
-  }
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+}
+
+ul {
+  padding-left: 0;
+}
+
+li {
+  list-style: none;
 }
