@@ -96,6 +96,7 @@ header {
 /* Footer */
 footer {
   grid-area: footer;
+  background-color: #03254e;
 }
 
 .footlist {
@@ -106,7 +107,17 @@ footer {
   margin-left: 5vw;
   margin-right: 5vw;
   margin-top: 0;
+  padding-top: 20px;
   margin-bottom: 0;
+}
+
+.footersvg {
+  width: 50px;
+  height: 50px;
+}
+
+.lightsvg {
+  fill: #80b9ff;
 }
 
 .button {

@@ -24,6 +24,8 @@ Mainly future recruiters or coworkers. Also includes my programming peers, peopl
 
 SCSS using Dart Sass. SCSS structure informed by this [best practices article](https://www.webdesignerdepot.com/2020/12/2-smartest-ways-to-structure-sass/). To deploy, make sure sass is compiled with `sass scss:styles`.
 
+Icons from [iconmonstr](https://iconmonstr.com/).
+
 ## Sitemap
 
 ## Screenshots
