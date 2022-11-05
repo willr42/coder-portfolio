@@ -8,7 +8,9 @@ header {
   align-items: center;
   margin-left: 5vw;
   margin-right: 5vw;
-  margin-bottom: 20px;
+  margin-bottom: 0;
+  max-width: 100vw;
+  grid-area: header;
 }
 
 @media screen and (min-width: core.$small-screen) {
@@ -29,7 +31,7 @@ header {
   gap: 4vw;
 }
 
-.navitem {
+.nav-item {
   a {
     font-family: 'Oswald', serif;
     color: inherit;
@@ -40,6 +42,29 @@ header {
 @media screen and (min-width: core.$small-screen) {
   .navlist {
     gap: 2vw;
+  }
+}
+
+/* Main Content Grid */
+#body-grid {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    'header'
+    'main'
+    'footer';
+  min-height: 100vh;
+  row-gap: 20px;
+}
+
+@media screen and (min-width: core.$med-screen) {
+  #body-grid {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      'header header'
+      'main main'
+      'footer footer';
   }
 }
 

@@ -3,3 +3,37 @@
 .button {
   background-color: blue;
 }
+
+.hero-section {
+  display: flex;
+  justify-content: center;
+  grid-area: main;
+}
+
+.hero-overlay {
+  position: relative;
+}
+
+.hero-image {
+  max-width: 100%;
+}
+
+@media screen and (min-width: 400px) {
+  .hero-image {
+    max-width: 400px;
+  }
+}
+
+.hero-heading {
+  background-color: white;
+  padding: 1vw 1vh;
+  position: absolute;
+  bottom: 20px;
+  left: 25px;
+  font-size: 32px;
+  font-weight: 400;
+  .bold {
+    font-size: 32px;
+    font-weight: bold;
+  }
+}
