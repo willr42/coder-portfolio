@@ -6,13 +6,15 @@ $med-screen: 900px;
 $lg-screen: 1200px;
 $color-dark: #03254e;
 $color-light: #80b9ff;
+$heading-font: 'Oswald', serif;
+$body-font: 'Source Sans Pro', 'Arial', sans-serif;
 
 // Set logical sizing & fonts
 *,
 *::before,
 *::after {
   box-sizing: border-box;
-  font-family: 'Source Sans Pro', 'Arial', sans-serif;
+  font-family: $body-font;
   font-size: 16px;
 }
 
