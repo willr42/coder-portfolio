@@ -40,6 +40,7 @@
   }
 }
 
+// Text & Heading
 .text-and-heading {
   margin-left: 5vw;
   margin-right: 5vw;
@@ -49,8 +50,61 @@
   }
 }
 
+// Skills component
 .skills {
   & h2 {
     font-family: core.$heading-font;
   }
+  margin-right: 10px;
+}
+
+.skills-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.skills-container > :first-child {
+  margin-top: 0;
+}
+
+.skillbar-outer {
+  height: 30px;
+  background-color: core.$color-dark;
+  width: 100%;
+  border-radius: 80px;
+  position: relative;
+  max-width: 557px;
+}
+
+.skillbar-inner {
+  height: 20px;
+  background-color: core.$color-light;
+  width: 85%;
+  border-radius: 80px;
+  position: absolute;
+  top: 5px;
+  left: 5px;
+}
+
+.skillbar-js {
+  max-width: 80%;
+}
+
+.skillbar-python {
+  max-width: 65%;
+}
+
+.skillbar-react {
+  max-width: 70%;
+}
+
+.skillbar-c {
+  max-width: 20%;
+}
+
+.skillbar-bash {
+  max-width: 40%;
 }

@@ -74,36 +74,40 @@ main {
 }
 
 /* Main Content Grid */
-.content-grid {
+.home-content-grid {
   display: grid;
   grid-template-areas:
     'lhs'
     'rhs'
-    'mainfill';
+    'content1'
+    'content2';
   margin-left: 5.5vw;
   margin-right: 5.5vw;
 }
 
-@media screen and (min-width: core.$med-screen) {
-  .content-grid {
+@media screen and (min-width: core.$lg-screen) {
+  .home-content-grid {
     grid-template-areas:
       'lhs rhs'
-      'mainfill mainfill';
+      'content1 content2';
     margin-left: 12.5vw;
     margin-right: 12.5vw;
   }
 }
 
-.content-grid-lhs {
+.home-content-grid-lhs {
   grid-area: lhs;
 }
 
-.content-grid-rhs {
+.home-content-grid-rhs {
   grid-area: rhs;
 }
 
-.content-grid-mainfill {
-  grid-area: mainfill;
+.home-content-grid-content1 {
+  grid-area: content1;
+}
+.home-content-grid-content2 {
+  grid-area: content1;
 }
 
 /* Footer */
