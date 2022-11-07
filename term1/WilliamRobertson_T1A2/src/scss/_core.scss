@@ -6,8 +6,8 @@ $med-screen: 900px;
 $lg-screen: 1200px;
 $color-dark: #03254e;
 $color-light: #80b9ff;
-$heading-font: 'Oswald', serif;
-$body-font: 'Source Sans Pro', 'Arial', sans-serif;
+$heading-font: "Oswald", serif;
+$body-font: "Source Sans Pro", "Arial", sans-serif;
 
 // Set logical sizing & fonts
 *,
@@ -15,11 +15,17 @@ $body-font: 'Source Sans Pro', 'Arial', sans-serif;
 *::after {
   box-sizing: border-box;
   font-family: $body-font;
-  font-size: 16px;
+  color: $color-dark;
 }
 
 // Reset, adopted from Normalize.css https://necolas.github.io/normalize.css/
-body {
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   margin: 0;
 }
 
@@ -49,4 +55,8 @@ canvas,
 svg {
   display: block;
   max-width: 100%;
+}
+
+.center {
+  text-align: center;
 }
