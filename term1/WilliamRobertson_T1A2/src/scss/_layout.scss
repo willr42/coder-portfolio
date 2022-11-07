@@ -34,6 +34,12 @@ header {
   gap: 4vw;
 }
 
+@media screen and (min-width: core.$small-screen) {
+  .navlist {
+    gap: 2vw;
+  }
+}
+
 .nav-item {
   a {
     font-family: core.$heading-font;
@@ -42,10 +48,10 @@ header {
   }
 }
 
-@media screen and (min-width: core.$small-screen) {
-  .navlist {
-    gap: 2vw;
-  }
+.nav-active {
+  font-weight: bold;
+  text-decoration: solid;
+  text-decoration: underline solid core.$color-dark;
 }
 
 /* Overall Layout Grid */
@@ -109,7 +115,7 @@ main {
   grid-area: content1;
 }
 .home-content-grid-content2 {
-  grid-area: content1;
+  grid-area: content2;
 }
 
 /* Footer */
