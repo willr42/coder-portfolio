@@ -44,16 +44,22 @@
 .text-and-heading {
   margin-left: 5vw;
   margin-right: 5vw;
+  margin-bottom: 2rem;
   grid-area: rhs;
   & h2 {
     font-family: core.$heading-font;
   }
 }
 
+.callout {
+  font-size: 125%;
+}
+
 // Skills component
 .skills {
   & h2 {
     font-family: core.$heading-font;
+    margin-top: 1.5rem;
   }
   margin-right: 10px;
 }
@@ -151,13 +157,43 @@
 }
 
 .card-copy {
-  margin: 5px 2px;
+  margin: 5px 7.5px;
 }
 
 .card-buttons {
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 1.5vh;
   margin-left: 5%;
   margin-right: 5%;
+}
+
+@media screen and (min-width: core.$med-screen) {
+  .card-buttons {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+}
+
+// Button Component
+.primary-button {
+  background-color: core.$color-dark;
+  color: white;
+  min-width: 100px;
+  padding: 5px 5px;
+  border-radius: 50px;
+}
+
+.primary-button:hover {
+  color: core.$color-dark;
+  background-color: core.$color-light;
+}
+
+.primary-button:active {
+  box-shadow: inset 0px 0px 7.5px core.$color-dark;
+}
+
+.primary-button:focus-visible {
+  outline: core.$color-light solid 3.5px;
 }
