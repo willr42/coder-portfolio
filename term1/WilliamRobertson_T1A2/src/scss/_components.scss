@@ -236,8 +236,12 @@
   flex-direction: column;
   text-align: center;
   gap: 2rem;
+  h1 {
+    font-size: 1.75em;
+  }
   h2 {
     font-family: core.$heading-font;
+    font-size: 1.25em;
   }
   img {
     order: 0;
