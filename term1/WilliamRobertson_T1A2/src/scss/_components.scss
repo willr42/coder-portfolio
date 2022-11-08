@@ -181,9 +181,7 @@
 }
 
 // Button Component
-.primary-button {
-  background-color: core.$color-dark;
-  color: white;
+.button {
   min-width: 100px;
   padding: 5px 20px;
   border-radius: 50px;
@@ -191,19 +189,34 @@
   cursor: pointer;
   text-align: center;
   text-decoration: none;
-}
-
-.primary-button:hover {
-  color: core.$color-dark;
-  background-color: core.$color-light;
-}
-
-.primary-button:active {
-  box-shadow: inset 0px 0px 7.5px core.$color-dark;
-}
-
-.primary-button:focus-visible {
-  outline: core.$color-light solid 3.5px;
+  &-primary {
+    background-color: core.$color-dark;
+    color: white;
+    &:hover {
+      color: core.$color-dark;
+      background-color: core.$color-light;
+    }
+    &:active {
+      box-shadow: inset 0px 0px 7.5px core.$color-dark;
+    }
+    &:focus-visible {
+      outline: core.$color-light solid 3.5px;
+    }
+  }
+  &-secondary {
+    background-color: core.$color-light;
+    color: white;
+    &:hover {
+      color: core.$color-light;
+      background-color: core.$color-dark;
+    }
+    &:active {
+      box-shadow: inset 0px 0px 7.5px 5px white;
+    }
+    &:focus-visible {
+      outline: core.$color-dark solid 3.5px;
+    }
+  }
 }
 
 // Blog Entry
