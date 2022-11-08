@@ -120,15 +120,16 @@
   display: grid;
   justify-items: center;
   gap: 1rem;
+  align-items: start;
 }
 
-@media screen and (min-width: core.$med-screen) {
+@media screen and (min-width: core.$small-screen) {
   .card-grid {
     grid-template-columns: 1fr 1fr;
   }
 }
 
-@media screen and (min-width: core.$lg-screen) {
+@media screen and (min-width: core.$med-screen) {
   .card-grid {
     grid-template-columns: 1fr 1fr 1fr;
   }
