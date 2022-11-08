@@ -205,3 +205,49 @@
 .primary-button:focus-visible {
   outline: core.$color-light solid 3.5px;
 }
+
+// Blog Entry
+.blog-entry {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 10vw;
+}
+
+.blog-intro {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 2rem;
+  h2 {
+    font-family: core.$heading-font;
+  }
+  img {
+    order: 0;
+  }
+}
+
+.blog-intro-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  order: 1;
+}
+
+@media screen and (min-width: core.$med-screen) {
+  .blog-entry {
+    margin: 0 15vw;
+    gap: 20px;
+  }
+
+  .blog-intro {
+    flex-direction: row;
+    img {
+      order: 1;
+    }
+  }
+
+  .blog-intro-text {
+    order: 0;
+  }
+}
