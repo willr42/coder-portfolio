@@ -343,12 +343,12 @@ footer {
   display: flex;
   flex-direction: column;
   height: 100%;
-  padding: 10px 4px;
+  padding: 10px 7px;
   gap: 6px;
+  justify-content: center;
 }
 
 .card-heading {
-  margin-left: 0.25rem;
   margin-bottom: 0.25rem;
   overflow-wrap: normal;
 }
