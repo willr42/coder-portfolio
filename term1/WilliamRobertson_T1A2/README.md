@@ -2,9 +2,9 @@
 
 My portfolio website for CoderAcademy.
 
-[Deployed at:](https://www.google.com) //WIP: UPDATE WITH LINK
+Deployed at [Netlify](https://jolly-muffin-00e5e8.netlify.app/index.html)
 
-[Source at:](https://www.github.com) //WIP: UPDATE WITH REPO
+Source at [Github](https://www.github.com) //WIP: UPDATE WITH REPO
 
 ## Purpose
 
@@ -27,6 +27,8 @@ SCSS using Dart Sass. SCSS structure informed by this [best practices article](h
 Icons from [iconmonstr](https://iconmonstr.com/).
 
 ## Sitemap
+
+![sitemap](./docs/sitemap.png)
 
 ## Screenshots
 
