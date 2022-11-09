@@ -230,7 +230,7 @@ footer {
 
 @media screen and (min-width: 400px) {
   .hero-image {
-    max-width: 400px;
+    max-width: 350px;
   }
 }
 .hero-heading {
