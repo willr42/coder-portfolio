@@ -318,7 +318,7 @@ footer {
 .card-grid {
   display: grid;
   justify-items: center;
-  gap: 1rem;
+  gap: 50px;
   align-items: start;
   grid-template-rows: 300px;
   grid-template-columns: 300px;
