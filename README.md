@@ -2,9 +2,11 @@
 
 My portfolio website for CoderAcademy.
 
-Deployed at [Netlify](https://jolly-muffin-00e5e8.netlify.app/index.html)
+Deployed at [Netlify](https://jolly-muffin-00e5e8.netlify.app/index.html).
 
-Source at [Github](https://github.com/willr42/coder-portfolio)
+Source at [Github](https://github.com/willr42/coder-portfolio).
+
+Site presentation video: TBC
 
 ## Purpose
 
@@ -34,8 +36,30 @@ Icons from [iconmonstr](https://iconmonstr.com/).
 
 ### Homepage
 
+![Homepage Mobile](./docs/screenshots/home-mobile.png)
+
+![Homepage Desktop](./docs/screenshots/home-desktop.png)
+
 ### Book Blog
+
+![Homepage Mobile](./docs/screenshots/blog-mobile.png)
+
+![Homepage Desktop](./docs/screenshots/blog-desktop.png)
+
+### Blog Entry
+
+![Homepage Mobile](./docs/screenshots/blogentry-mobile.png)
+
+![Homepage Desktop](./docs/screenshots/blogentry-desktop.png)
 
 ### Work
 
+![Homepage Mobile](./docs/screenshots/work-mobile.png)
+
+![Homepage Desktop](./docs/screenshots/work-desktop.png)
+
 ### About
+
+![Homepage Mobile](./docs/screenshots/about-mobile.png)
+
+![Homepage Desktop](./docs/screenshots/about-desktop.png)
