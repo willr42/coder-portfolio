@@ -338,6 +338,9 @@ footer {
   min-height: 330px;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
 }
+.card-work {
+  min-height: 375px;
+}
 
 .card-contents {
   display: flex;
@@ -346,6 +349,10 @@ footer {
   padding: 10px 7px;
   gap: 6px;
   justify-content: center;
+}
+.card-contents-work {
+  padding: 10px 4px;
+  justify-content: baseline;
 }
 
 .card-heading {
