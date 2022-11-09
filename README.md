@@ -4,7 +4,7 @@ My portfolio website for CoderAcademy.
 
 Deployed at [Netlify](https://jolly-muffin-00e5e8.netlify.app/index.html)
 
-Source at [Github](https://www.github.com) //WIP: UPDATE WITH REPO
+Source at [Github](https://github.com/willr42/coder-portfolio)
 
 ## Purpose
 
@@ -20,9 +20,9 @@ Mainly future recruiters or coworkers. Also includes my programming peers, peopl
 
 ## Tech stack
 
-//WIP: deployment information, css composition, html notes
+Static HTML and CSS website deployed on [Netlify](https://www.netlify.com/).
 
-SCSS using Dart Sass. SCSS structure informed by this [best practices article](https://www.webdesignerdepot.com/2020/12/2-smartest-ways-to-structure-sass/). To deploy, make sure sass is compiled with `sass scss:styles`.
+SCSS using Dart Sass. SCSS structure informed by this [best practices article](https://www.webdesignerdepot.com/2020/12/2-smartest-ways-to-structure-sass/).
 
 Icons from [iconmonstr](https://iconmonstr.com/).
 
@@ -31,8 +31,6 @@ Icons from [iconmonstr](https://iconmonstr.com/).
 ![sitemap](./docs/sitemap.png)
 
 ## Screenshots
-
-//WIP: screenshot of mobile and desktop layout of each page.
 
 ### Homepage
 
