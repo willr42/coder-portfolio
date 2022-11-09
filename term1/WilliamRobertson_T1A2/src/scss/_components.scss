@@ -93,34 +93,30 @@
   position: absolute;
   top: 5px;
   left: 5px;
+  &-js {
+    max-width: 80%;
+  }
+  &-python {
+    max-width: 65%;
+  }
+  &-react {
+    max-width: 70%;
+  }
+  &-c {
+    max-width: 20%;
+  }
+  &-bash {
+    max-width: 40%;
+  }
 }
 
-.skillbar-js {
-  max-width: 80%;
-}
-
-.skillbar-python {
-  max-width: 65%;
-}
-
-.skillbar-react {
-  max-width: 70%;
-}
-
-.skillbar-c {
-  max-width: 20%;
-}
-
-.skillbar-bash {
-  max-width: 40%;
-}
-
-// Cards component
+// Card Grid component
 .card-grid {
   display: grid;
   justify-items: center;
   gap: 1rem;
   align-items: start;
+  min-width: 80%;
 }
 
 @media screen and (min-width: core.$small-screen) {
@@ -135,6 +131,7 @@
   }
 }
 
+// Card Component
 .card {
   width: 300px;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
