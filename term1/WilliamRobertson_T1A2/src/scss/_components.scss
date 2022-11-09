@@ -278,3 +278,9 @@
     order: 0;
   }
 }
+
+// One-off styles
+.styled-link {
+  font-weight: bold;
+  text-decoration: underline solid inherit;
+}
