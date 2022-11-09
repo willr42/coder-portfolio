@@ -125,6 +125,12 @@ main {
   align-items: center;
 }
 
+@media screen and (min-width: core.$small-screen) {
+  .text-and-heading {
+    max-width: 65vw;
+  }
+}
+
 /* Footer */
 footer {
   grid-area: footer;

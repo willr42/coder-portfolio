@@ -116,16 +116,17 @@
   justify-items: center;
   gap: 1rem;
   align-items: start;
-  min-width: 80%;
+  grid-template-rows: 300px;
+  grid-template-columns: 300px;
 }
 
-@media screen and (min-width: core.$small-screen) {
+@media screen and (min-width: 650px) {
   .card-grid {
     grid-template-columns: 1fr 1fr;
   }
 }
 
-@media screen and (min-width: core.$med-screen) {
+@media screen and (min-width: 1000px) {
   .card-grid {
     grid-template-columns: 1fr 1fr 1fr;
   }
@@ -225,6 +226,14 @@
   margin: 0 10vw;
   p {
     margin-bottom: 0;
+  }
+}
+
+@media screen and (min-width: core.$small-screen) {
+  .blog-entry {
+    p {
+      max-width: 55vw;
+    }
   }
 }
 
