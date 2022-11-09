@@ -1,13 +1,43 @@
-# CoderAcademy Assessments
+# T1A2: Portfolio Website
 
-This is an overall repo for all my Coder assessments.
+My portfolio website for CoderAcademy.
 
-## Term 1
+Deployed at [Netlify](https://jolly-muffin-00e5e8.netlify.app/index.html)
 
-### T1A1: Workbook
+Source at [Github](https://www.github.com) //WIP: UPDATE WITH REPO
 
-Short answer questions. Submitted as one PDF called `WilliamRobertson_T1A1.pdf`. Review TurnItIn plagiarism.
+## Purpose
 
-### T1A2: Portfolio
+To showcase my skills as a developer, to house my recent work, to add a little bit of personal character about myself to job applications.
 
-### T1A3: Terminal Application
+## Features
+
+Four-page static website featuring handbuilt HTML & CSS components.
+
+## Target audience
+
+Mainly future recruiters or coworkers. Also includes my programming peers, people in the OSS community.
+
+## Tech stack
+
+//WIP: deployment information, css composition, html notes
+
+SCSS using Dart Sass. SCSS structure informed by this [best practices article](https://www.webdesignerdepot.com/2020/12/2-smartest-ways-to-structure-sass/). To deploy, make sure sass is compiled with `sass scss:styles`.
+
+Icons from [iconmonstr](https://iconmonstr.com/).
+
+## Sitemap
+
+![sitemap](./docs/sitemap.png)
+
+## Screenshots
+
+//WIP: screenshot of mobile and desktop layout of each page.
+
+### Homepage
+
+### Book Blog
+
+### Work
+
+### About
