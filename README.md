@@ -6,7 +6,7 @@ Deployed at [Netlify](https://jolly-muffin-00e5e8.netlify.app/index.html).
 
 Source at [Github](https://github.com/willr42/coder-portfolio).
 
-Site presentation video: TBC
+Site presentation video: [YouTube](https://www.youtube.com/watch?v=puuWN4063oI).
 
 ## Purpose
 
